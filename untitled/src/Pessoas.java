@@ -1,11 +1,10 @@
-import java.util.Objects;
+public class Pessoas{
 
-public class Contato implements Comparable<Contato>{
 
     private String nome;
     private String sexo;
 
-    public Contato(String nome, String sexo) {
+    public Pessoas(String nome, String sexo) {
         this.nome = nome;
         this.sexo = sexo;
     }
@@ -25,25 +24,12 @@ public class Contato implements Comparable<Contato>{
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-/*
 
-serve para converter em texto
-
- */
     @Override
     public String toString() {
-        return "Contato{" +
+        return "Pessoas {" +
                 "nome='" + nome + '\'' +
-                ", sexo='" + sexo + '\'' +
                 '}';
     }
 
-    @Override
-    public int compareTo(Contato Contato) {
-        return this.sexo.compareTo(Contato.getNome());
-    }
-
-    public void add(Contato contato) {
-    }
 }
-
